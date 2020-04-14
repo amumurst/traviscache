@@ -9,7 +9,7 @@ env:
 script:
   - git checkout .
   - git clean -f
-  - sbt cachedCiTestQuick
+  - sbt cachedCiTest
 
 before_cache:
   - rm -fv $HOME/.ivy2/.sbt.ivy.lock
