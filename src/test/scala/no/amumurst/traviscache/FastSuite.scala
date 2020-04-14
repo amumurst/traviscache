@@ -11,4 +11,5 @@ class FastSuite extends munit.FunSuite with IORunner {
   test("7") { FastFunctions.sleeper(7) }
   test("8") { FastFunctions.sleeper(8) }
   test("9") { FastFunctions.sleeper(9) }
+  test("10") { FastFunctions.sleeper(9) }
 }
