@@ -5,6 +5,7 @@ import scala.concurrent.duration._
 
 object FastFunctions {
   def sleeper(i: Int)(implicit t: Timer[IO]): IO[Unit] =
-    IO(println(s"Running fast function $i")) *> IO
-      .sleep(i.milliseconds)
+    IO(println(s"Running fast function $i")) *>
+      IO(println(s"Hey-o $i")) *>
+      IO.sleep(i.milliseconds)
 }
