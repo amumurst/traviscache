@@ -1,5 +1,5 @@
 package no.amumurst.traviscache
 
-case object MathFunctions {
-  def supermath(i: Int): Int = 2 * 2
+object MathFunctions {
+  def times2(i: Int): Int = i * 2
 }
